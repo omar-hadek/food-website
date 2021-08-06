@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+/*Common styles*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Nunito',sans-serif;
+  font-weight: 400;
+}
+html{
+    font-size: 62.5%;
+}
+/*End of common Styles*/
+/*section 1*/
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.section-heading{
+  color: #fff;
+  font-size: 12rem;
+  font-weight: 900;
+  text-shadow: .3rem .3rem .3rem #000;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+
+}
+
+.section-1-icons i {
+  font-size:35rem;
+  color: #a79a2d;
+  position: absolute;
+  transform: translate(-50%,-50%)scale(0);
+  text-shadow: .3rem .3rem .3rem #000;
+  transition: transform 0.3s;
+}
+
+.section-1-icons i.change{
+  transform: translate(-50%,-50%)scale(1);
+  transition: 0.3s 0.3s;
+}
+
+/* End of section 1 */
+
+/* Section 2 */
+.section-2{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #222;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.cards-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+}
+
+.card{
+  width: 25rem;
+  background-color: #a97a2d;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  box-shadow: 1rem 1rem 1rem #111;
+  position: relative;
+  transform: rotateY(20deg)skewX(-2deg);
+
+}
+.card img{
+  width: 100%;
+  height: 100%;
+}
+
+.card-name{
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: #111;
+  margin: 2rem 0;
+  text-shadow: 0.15rem 0.15rem 0.15rem #000;
+}
+
+.cardBtn{
+  width: 70%;
+  background-color: #111;
+  outline: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 5rem;  
+  color: #fff;
+  font-weight: 800;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  box-shadow: -0.2rem -0.2rem 0.2rem #222;
+
+}
+
+.card::before{
+  content: "";
+  height: 100%;
+  width: 1rem;
+  background-color: #817824;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  transform: skewY(45deg);
+  transform-origin: right;
+  box-shadow: -0.1rem -0.1rem 0.1rem #000;
+}
+
+.card::after{
+  content: "";
+  height: 1rem;
+  width: 100%;
+  background-color: #817824;
+  position: absolute;
+  top: -1rem;
+  transform: skewX(45deg);
+  transform-origin: bottom;
+  box-shadow: -0.1em -0.1rem 0.1rem #000;
+}
+
+.card:hover{
+  transform: rotateY(20deg)skewX(-2deg)translateY(-3rem);
+  box-shadow: 2rem 2rem 2rem #000;
+}
+/* End of section 2 */
+
+
+/* section  3*/
+
+/* End of section 3 */
